@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/F0_to_F3 - Day.wav-f38c9749a15d947c4599551ed0914674.sample"
+
+[deps]
+
+source_file="res://Assets/General/Sounds/F0_to_F3 - Day.wav"
+dest_files=[ "res://.import/F0_to_F3 - Day.wav-f38c9749a15d947c4599551ed0914674.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
