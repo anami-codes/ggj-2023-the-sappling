@@ -1,4 +1,4 @@
-[gd_scene load_steps=216 format=2]
+[gd_scene load_steps=217 format=2]
 
 [ext_resource path="res://T_VFX_Fireflies.png" type="Texture" id=1]
 [ext_resource path="res://Assets/General/MainTheme.tres" type="Theme" id=2]
@@ -895,6 +895,10 @@ animations = [ {
 "speed": 24.0
 } ]
 
+[sub_resource type="Gradient" id=173]
+offsets = PoolRealArray( 0.00729927, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0 )
+
 [node name="MainScene" type="Node"]
 script = ExtResource( 5 )
 
@@ -1099,9 +1103,9 @@ initial_velocity_random = 0.1
 linear_accel = 10.0
 scale_amount = 0.1
 scale_amount_random = 0.2
+color_ramp = SubResource( 173 )
 
 [node name="UI" type="Control" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 25.0
@@ -1191,7 +1195,6 @@ stretch_mode = 3
 script = ExtResource( 17 )
 
 [node name="Fade" type="Panel" parent="."]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 input_pass_on_modal_close_click = false
