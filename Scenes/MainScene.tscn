@@ -1,5 +1,6 @@
-[gd_scene load_steps=215 format=2]
+[gd_scene load_steps=216 format=2]
 
+[ext_resource path="res://T_VFX_Fireflies.png" type="Texture" id=1]
 [ext_resource path="res://Assets/General/MainTheme.tres" type="Theme" id=2]
 [ext_resource path="res://Assets/General/Sprites/Icon_next.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/MainButton.gd" type="Script" id=4]
@@ -1082,7 +1083,25 @@ scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 14 )
 flip_h = true
 
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Scene"]
+amount = 150
+lifetime = 1.5
+preprocess = 3.0
+speed_scale = 0.15
+draw_order = 1
+texture = ExtResource( 1 )
+emission_shape = 2
+emission_rect_extents = Vector2( 1080, 720 )
+spread = 1.0
+gravity = Vector2( 0, 1 )
+initial_velocity = 34.88
+initial_velocity_random = 0.1
+linear_accel = 10.0
+scale_amount = 0.1
+scale_amount_random = 0.2
+
 [node name="UI" type="Control" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 25.0
@@ -1172,6 +1191,7 @@ stretch_mode = 3
 script = ExtResource( 17 )
 
 [node name="Fade" type="Panel" parent="."]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 input_pass_on_modal_close_click = false
